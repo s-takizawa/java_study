@@ -4,28 +4,38 @@ public class Main {
 
   public static void main(String[] args) {
     // Cities
+    System.out.println("Cities --------------------------");
     Cities.funcMain();
-    System.out.println("--------------------------");
 
     // DiscountFunctional
+    System.out.println("DiscountFunctional--------------------------");
     var df = new DiscountFunctinal();
     df.funcMain();
-    System.out.println("--------------------------");
 
     // Iteration
+    System.out.println("Iteration --------------------------");
     var itrt = new Iteration();
     itrt.funcMain();
-    System.out.println("--------------------------");
 
     // Transform
+    System.out.println("Transform --------------------------");
     var trs = new Transform();
     trs.funcMain();
-    System.out.println("--------------------------");
 
     // PrintList
+    System.out.println("PrintList --------------------------");
     var pl = new PrintList();
     pl.funcMain();
-    System.out.println("--------------------------");
+
+    // IteratorString
+    System.out.println("IteratorString --------------------------");
+    var is = new IteratorString();
+    is.funcMain();
+
+    // Person
+    System.out.println("Person --------------------------");
+    var cp = new Person("tarou", 12);
+    cp.funcMain();
   }
 
 }
