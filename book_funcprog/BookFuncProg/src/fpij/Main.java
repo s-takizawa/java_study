@@ -51,8 +51,15 @@ public class Main {
 
     // WatchFileChange
     System.out.println("WatchFileChange --------------------------");
-    var wfc = new WatchFileChange();
-    wfc.funcMain();
+    WatchFileChange.funcMain();
+
+    // AsssetUtil
+    System.out.println("AsssetUtil --------------------------");
+    AsssetUtil.funcMain();
+
+    // AssetUtilRefactored
+    System.out.println("AssetUtilRefactored --------------------------");
+    AssetUtilRefactored.funcMain();
   }
 
 }
