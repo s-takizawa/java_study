@@ -1,8 +1,10 @@
 package fpij;
 
+import java.io.IOException;
+
 public class Main {
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws IOException {
     // Cities
     System.out.println("Cities --------------------------");
     Cities.funcMain();
@@ -36,6 +38,21 @@ public class Main {
     System.out.println("Person --------------------------");
     var cp = new Person("tarou", 12);
     cp.funcMain();
+
+    // OlderThan20
+    System.out.println("OlderThan20 --------------------------");
+    var ot20 = new OlderThan20();
+    ot20.funcMain();
+
+    // ListFiles
+    System.out.println("ListFiles --------------------------");
+    var lf = new ListFiles();
+    lf.funcMain();
+
+    // WatchFileChange
+    System.out.println("WatchFileChange --------------------------");
+    var wfc = new WatchFileChange();
+    wfc.funcMain();
   }
 
 }
