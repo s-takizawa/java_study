@@ -5,6 +5,11 @@ import java.io.IOException;
 public class Main {
 
   public static void main(String[] args) throws IOException {
+
+    // LambdaSample
+    System.out.println("LambdaSample --------------------------");
+    LambdaSample.func1();
+
     // Cities
     System.out.println("Cities --------------------------");
     Cities.funcMain();
@@ -60,6 +65,23 @@ public class Main {
     // AssetUtilRefactored
     System.out.println("AssetUtilRefactored --------------------------");
     AssetUtilRefactored.funcMain();
+
+    // Camera
+    System.out.println("Camera --------------------------");
+    Camera.funcMain();
+
+    // SeaPlane
+    System.out.println("SeaPlane --------------------------");
+    var sp = new SeaPlane();
+    sp.funcMain();
+
+    // MailBuilder
+    System.out.println("MailBuilder --------------------------");
+    MailBuilder.funcMain();
+
+    // FluentMailer
+    System.out.println("FluentMailer --------------------------");
+    FluentMailer.funcMain();
   }
 
 }
