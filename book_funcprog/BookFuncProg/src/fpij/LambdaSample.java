@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.function.Consumer;
 import java.util.function.Function;
+import java.util.function.Predicate;
 import java.util.function.Supplier;
 
 public class LambdaSample {
@@ -61,6 +62,10 @@ public class LambdaSample {
     // supplier => 戻り値のみ
     Supplier<Integer> supplier = () -> 1111;
     System.out.println("supplier:" + supplier.get());
+
+    // predicate
+    Predicate<Integer> predicate = n -> n > 10;
+    System.out.println("predicate:" + predicate.test(12));
 
     System.out.println(); // 改行
   }
