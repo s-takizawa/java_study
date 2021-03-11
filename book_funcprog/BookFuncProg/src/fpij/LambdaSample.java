@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.function.Consumer;
 import java.util.function.Function;
+import java.util.function.Supplier;
 
 public class LambdaSample {
 
@@ -53,9 +54,13 @@ public class LambdaSample {
         .reduce(0, (lencnt, name) -> lencnt + name.length(), (res1, res2) -> res1 += res2);
     System.out.println("reduce result[args3]:並列:" + reudceArg3ParallelResult);
 
-    // consumer
+    // consumer => 引数＋戻り値
     Consumer<String> consumerStrlencnt = (s) -> System.out.println("consumer:" + s.length());
     consumerStrlencnt.accept("hoge");
+
+    // supplier => 戻り値のみ
+    Supplier<Integer> supplier = () -> 1111;
+    System.out.println("supplier:" + supplier.get());
 
     System.out.println(); // 改行
   }

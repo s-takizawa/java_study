@@ -82,6 +82,14 @@ public class Main {
     // FluentMailer
     System.out.println("FluentMailer --------------------------");
     FluentMailer.funcMain();
+
+    // HolderNaive
+    System.out.println("HolderNaive --------------------------");
+    HolderNaive.funcMain();
+
+    // Evaluation
+    System.out.println("Evaluation --------------------------");
+    Evaluation.mainFunc();
   }
 
 }
