@@ -3,6 +3,14 @@ package js11;
 public class Chapter3 {
 
   public static void main(String[] args) {
+    // その他
+    {
+
+      System.out.println("[その他]");
+      System.out.println(1 + 2 + "3" + 4 + 5);
+      System.out.println("-----------");
+
+    }
     // 1
     {
       int a = 3;
