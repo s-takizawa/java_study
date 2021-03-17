@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Chapter3 {
+public class Main {
 
   public static void main(String[] args) {
     // その他
@@ -21,6 +21,50 @@ public class Chapter3 {
       var list4 = new ArrayList<Integer>(3); // ArrayList<Integer>:可変長
       System.out.println(list4);
 
+      System.out.println("****");
+      int[] int_list1 = new int[3];
+      System.out.println(int_list1);
+      int[] int_list2 = new int[] { 1, 2, 3 };
+      System.out.println(int_list2);
+
+      int int_list3[][] = new int[3][];
+      int_list3[0] = new int[3];
+      int_list3[1] = new int[2];
+      int_list3[2] = new int[4];
+      for (int[] temp_int : int_list3) {
+        System.out.println(temp_int.length);
+      }
+
+      System.out.println("****");
+
+      int[] aryA = { 1, 2, 3 };
+      int[] aryB = aryA.clone();
+      System.out.println(aryA == aryB);
+
+      aryA[1] = 99;
+      Arrays.stream(aryA).forEach(i -> System.out.println(i));
+      Arrays.stream(aryB).forEach(i -> System.out.println(i));
+
+      System.out.println("****");
+      Object obj = null;
+      System.out.println(obj);
+
+      System.out.println("****");
+      Object a = new Object();
+      Object b = new Object();
+      Object c = a;
+      a = null;
+      b = null;
+      System.out.println(a);
+      System.out.println(b);
+      System.out.println(c);
+      System.out.println(a == c);
+
+      System.out.println("****");
+
+      Parent parent1 = new Child();
+      System.out.println("****");
+      Parent parent2 = new Child(1);
       System.out.println("-----------");
 
     }
