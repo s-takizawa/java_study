@@ -11,6 +11,9 @@ public class Main {
     {
 
       System.out.println("[その他]");
+      //      bool errorflg;  // コンパイルエラー
+      boolean errorflg;
+
       System.out.println(1 + 2 + "3" + 4 + 5);
       var list1 = List.of(1, 2, 3); // List<Integer>:固定長
       System.out.println(list1);
@@ -65,6 +68,63 @@ public class Main {
       Parent parent1 = new Child();
       System.out.println("****");
       Parent parent2 = new Child(1);
+
+      System.out.println("****");
+
+      int aa = 10;
+      int bb = aa++;
+      aa = 10;
+      int cc = ++aa;
+      System.out.println("bb=" + bb);
+      System.out.println("cc=" + cc);
+
+      System.out.println("****");
+      int xx = 4;
+      int[] xx_ary = new int[xx];
+
+      System.out.println("ary ****");
+
+      int[] xxx = {1,2,3};
+      int[] yyy = xxx.clone();
+      yyy[1] += 10;
+      Arrays.stream(xxx).forEach(i -> System.out.println(i));
+      Arrays.stream(yyy).forEach(i -> System.out.println(i));
+
+
+      System.out.println("2d ary ****");
+      int [][] xxxx = {{1,2,3},{4,5,6}};
+      int [][] yyyy = xxxx.clone();
+      yyyy[0][1] = 10;
+      yyyy[1] = new int[] {77,88,99};
+
+      System.out.println("xary");
+      Arrays.stream(xxxx).forEach(ar -> {
+        Arrays.stream(ar).forEach(i -> System.out.println(i));
+        System.out.println("+");
+        });
+      System.out.println("yary");
+      Arrays.stream(yyyy).forEach(ar -> {
+        Arrays.stream(ar).forEach(i -> System.out.println(i));
+        System.out.println("+");
+        });
+
+      System.out.println("****");
+
+      methodA(1);
+
+
+      System.out.println("****");
+
+      int abc;
+      int defg = 3;
+      if(defg > 2) {
+        abc = ++defg;
+        defg = abc + 5;
+      }else {
+        defg++;
+      }
+//      System.out.println(abc + "," + defg);  // コンパイルエラー
+
       System.out.println("-----------");
 
     }
@@ -160,6 +220,13 @@ public class Main {
       System.out.println("-----------");
 
     }
+  }
+
+  static void methodA(Integer num) {
+    System.out.println("call methodA:Integer");
+  }
+  static void methodA(int num) {
+    System.out.println("call methodA:int");
   }
 
 }
