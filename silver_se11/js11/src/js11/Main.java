@@ -84,46 +84,57 @@ public class Main {
 
       System.out.println("ary ****");
 
-      int[] xxx = {1,2,3};
+      int[] xxx = { 1, 2, 3 };
       int[] yyy = xxx.clone();
       yyy[1] += 10;
       Arrays.stream(xxx).forEach(i -> System.out.println(i));
       Arrays.stream(yyy).forEach(i -> System.out.println(i));
 
-
       System.out.println("2d ary ****");
-      int [][] xxxx = {{1,2,3},{4,5,6}};
-      int [][] yyyy = xxxx.clone();
+      int[][] xxxx = { { 1, 2, 3 }, { 4, 5, 6 } };
+      int[][] yyyy = xxxx.clone();
       yyyy[0][1] = 10;
-      yyyy[1] = new int[] {77,88,99};
+      yyyy[1] = new int[] { 77, 88, 99 };
 
       System.out.println("xary");
       Arrays.stream(xxxx).forEach(ar -> {
         Arrays.stream(ar).forEach(i -> System.out.println(i));
         System.out.println("+");
-        });
+      });
       System.out.println("yary");
       Arrays.stream(yyyy).forEach(ar -> {
         Arrays.stream(ar).forEach(i -> System.out.println(i));
         System.out.println("+");
-        });
+      });
 
       System.out.println("****");
 
       methodA(1);
 
-
       System.out.println("****");
 
       int abc;
       int defg = 3;
-      if(defg > 2) {
+      if (defg > 2) {
         abc = ++defg;
         defg = abc + 5;
-      }else {
+      } else {
         defg++;
       }
-//      System.out.println(abc + "," + defg);  // コンパイルエラー
+      //      System.out.println(abc + "," + defg);  // コンパイルエラー
+
+      System.out.println("float ****");
+      var foo = 5 / 2; // 2
+      var bar = (float) 5 / 2; // 2.5
+      var bar2 = 5 / (float) 2; // 2.5
+      System.out.println(foo);
+      System.out.println(bar);
+      System.out.println(bar2);
+
+      short s1 = 10;
+      Integer s2 = 20;
+      //      Long s3 = s1 + s2;   // コンパイルエラー
+      Long s3 = (long) s1 + s2;
 
       System.out.println("-----------");
 
@@ -225,6 +236,7 @@ public class Main {
   static void methodA(Integer num) {
     System.out.println("call methodA:Integer");
   }
+
   static void methodA(int num) {
     System.out.println("call methodA:int");
   }
