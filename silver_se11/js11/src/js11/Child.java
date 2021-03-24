@@ -18,6 +18,11 @@ public class Child extends Parent {
     System.out.println("child method");
   }
 
+  //  private void methodFuga() {   // アクセス修飾子なしのメソッドをoverrideしたらコンパイルエラー
+  protected void methodFuga() {
+    return;
+  }
+
   public List<String> getList() {
     return list;
   }

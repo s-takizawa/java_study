@@ -13,6 +13,10 @@ public class Parent {
     System.out.println("parent method");
   }
 
+  void parentMethod() {
+    return;
+  }
+
   public static void main(String[] args) {
     Child c = new Child();
     for (String str : c.getList()) {
