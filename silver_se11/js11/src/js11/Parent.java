@@ -13,7 +13,7 @@ public class Parent {
     System.out.println("parent method");
   }
 
-  void parentMethod() {
+  void methodFuga() {
     return;
   }
 
