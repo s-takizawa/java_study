@@ -1,0 +1,4 @@
+sato@sato.com=Sato Taro
+suzuki@suzuki.com=Suzuki Jiro
+tanaka@tanaka.com=Tanaka Saburo
+yamada@yamada.com=Yamada Siro
