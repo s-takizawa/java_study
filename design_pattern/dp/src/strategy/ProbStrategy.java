@@ -1,5 +1,6 @@
 package strategy;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class ProbStrategy implements Strategy {
@@ -33,12 +34,7 @@ public class ProbStrategy implements Strategy {
   }
 
   private int getSum(int hv) {
-    int sum = 0;
-    for (int i = 0; i < 3; i++) {
-      sum += history[hv][i];
-    }
-
-    return sum;
+    return Arrays.stream(history[hv]).sum();
   }
 
   @Override
