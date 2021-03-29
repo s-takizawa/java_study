@@ -15,3 +15,9 @@ Java for study
 書籍：Javaで学ぶデザインパターン入門
 <br>
 写経＋練習用
+<br>
+- 第２章　Adapter
+- 第３章　Template Method
+- 第８章　Abstract Factory
+- 第１０章　Strategy
+- 第１５章　Facade
