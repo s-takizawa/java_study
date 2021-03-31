@@ -19,6 +19,9 @@ Java for study
 - 第２章　Adapter
 - 第３章　Template Method
 - 第４章　Factory Method
+- 第７章　Builder
 - 第８章　Abstract Factory
 - 第１０章　Strategy
 - 第１５章　Facade
+- 第１７章　Observer
+- 第２２章　Command
